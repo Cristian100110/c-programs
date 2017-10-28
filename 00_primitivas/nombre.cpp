@@ -4,7 +4,7 @@
 
 int main(){
 
-	pintf("hola, me llamo c.\n"); /* Llamada a la funcion */
+	printf("hola, me llamo c.\n"); /* Llamada a la funcion */
 
     return EXIT_SUCCESS;
 
