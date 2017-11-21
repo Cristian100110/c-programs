@@ -17,7 +17,7 @@ int main(){
     perimetro = 4 * lado;
 
     /* Salida de datos */
-    printf("area: %lf\n"
+    printf("area:  %lf\n"
            "perimetro: %lf\n",
            area, perimetro);
     return EXIT_SUCCESS;
