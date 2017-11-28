@@ -19,7 +19,7 @@ int main(){
     printf("Nombre ocupa: %xh bytes \n", (int) sizeof(nombre));
 
     printf("Lista ocupa: %lu celdas \n",  sizeof(lista));
-    printf("Lista ocupa: %lu celdas \n",  sizeof(lista));
+    printf("Lista ocupa: %lu celdas \n",  sizeof(lista) / sizeof(int));
 
     printf("%c ",nombre[0]);
     printf("%c ",nombre[1]);
