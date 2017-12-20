@@ -19,28 +19,28 @@ int main(){
     scanf("%i",&rojo);
 
     if (amarillo == 0 && azul == 0 && rojo == 0)
-       printf("En lo que piensas es en la oscuridad, un buen sinonimo es la tiniebla  \n");
+        printf("En lo que piensas es en la oscuridad, un buen sinonimo es la tiniebla  \n");
 
     if (amarillo == 0 && azul == 0 && rojo == 1)
-       printf("El color rojo representa la sangre, el calor, un estado de ira, es un color atacante e invasor \n");
+        printf("El color rojo representa la sangre, el calor, un estado de ira, es un color atacante e invasor \n");
 
     if (amarillo == 0 && azul == 1 && rojo == 0)
-       printf("azul quiere decir libertad, viento, grandes praderas acompañadas de cielos finitos que parecen infinitos a simple vista \n");
+        printf("azul quiere decir libertad, viento, grandes praderas acompañadas de cielos finitos que parecen infinitos a simple vista \n");
 
     if (amarillo == 1 && azul == 0 && rojo == 0)
-       printf("Color de todas aquellas riquezas, del pequeño coloso brillando en el cielo, de ese girasol que despierta todas las mañanas. \n");
+        printf("Color de todas aquellas riquezas, del pequeño coloso brillando en el cielo, de ese girasol que despierta todas las mañanas. \n");
 
     if (amarillo == 0 && azul == 1 && rojo == 1)
-       printf("esto es un color feo \n");
+        printf("esto es un color feo \n");
 
     if (amarillo == 1 && azul == 0 && rojo == 1)
-       printf("el naranja se siente como el fuego sin llegar a quemar,el fruto de un arbol y un vegetal con forma de p******** \n");
+        printf("el naranja se siente como el fuego sin llegar a quemar,el fruto de un arbol y un vegetal con forma de p******** \n");
 
     if (amarillo == 1 && azul == 1 && rojo == 0)
-       printf("Este color es muy especial por que significa el color de la naturaleza y de todo aquello que lo rodea  \n");
+        printf("Este color es muy especial por que significa el color de la naturaleza y de todo aquello que lo rodea  \n");
 
     if (amarillo == 1 && azul == 1 && rojo == 1)
-       printf("La nieve, la sal, la union de todos los colores o el cosmos mismo, lo que mas te guste \n");
+        printf("La nieve, la sal, la union de todos los colores o el cosmos mismo, lo que mas te guste \n");
 
-return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
