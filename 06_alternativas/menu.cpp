@@ -3,14 +3,14 @@
 #include <stdlib.h>
 
 #define TRI 1
-#define TRI 1
-#define TRI 1
-#define TRI 1
-#define TRI 1
+#define CUA 2
+#define PAR 3
+#define PEN 4
+#define CIR 5
 
 int main(){
 
-    int opcion;
+    unsigned opcion;
 
     system ("toilet --gay -fpagga AREAS");
 
@@ -28,23 +28,23 @@ int main(){
 
     scanf(" %u", &opcion);
 
-    switch(2+opcion){
-        case 1:
+    switch(opcion){/*un +2 al principio de la variable para que al valor que nosotros indicamos sume dos.*/
+        case TRI:
             printf("△ \n");
             break;
 
-        case 2:
-            printf("Cuadrado \n");
+        case CUA:
+            printf("□ \n");
             break;
 
-        case 3:
-            printf("Paralelogramo \n");
+        case PAR:
+            printf("▱ \n");
             break;
 
-        case 4:
-            printf("Pentagono \n");
+        case PEN:
+            printf("⬠ \n");
             break;
-        case 5:
+        case CIR:
             printf("○ \n");
             break;
         default:
@@ -52,7 +52,7 @@ int main(){
             break;
     }
 
-
+    printf("\n");
 
     return EXIT_SUCCESS;
 
