@@ -3,13 +3,18 @@
 
 #define N 5
 int main(){
-    for (int f=0; f<N; f++){
-        for(int c=0; c>N; c++)
-            printf(" *");
+    for (int f=0; f<7; f++){
+            printf("*");
         printf("\n");
     }
+    for (int f=0; f<N; f++){
+            printf("       *");
+        printf("\n");
+    }
+    for (int f=0; f<7; f++){
+            printf(" *")
+    }
 
-    printf("\n");
 
 
     return EXIT_SUCCESS;
