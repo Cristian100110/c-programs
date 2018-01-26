@@ -1,29 +1,53 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 0
+#define N 3
 
+void ver(double a[N][N]){
+    printf("\n");
+    for (int f=0; f<N; f++){
+        for (int c=0; c<N; c++)
+            printf("%6.2lf", a[f][c]);
+        printf("\n");
+    }
+    printf("\n");
+}
 
 int main(){
 
-    /*
-     Normalizamos la fila 0
-        div f:0 / c:0
-     Apunto coef
-     Busco 0 en las col 0 de todas las filas
-
-      */
-
-    double norm_f [N][N] = {
+    double a [N][N] = {
 
         {2, 3, 4},
         {4, 7, 1},
         {6, 2, 3}
+    },
+           coef[N], k, det=1;
+    int cima = 0;
 
-    };
+    //normalizo la fila n
+    //Apunto el coeficiente n
+    //busco los 0 en las filas inferiores
+    //resto a la fila i la fila n multiplicada por ain
 
-    for (double f=0; f)
+    ver(a);
 
-    return EXIT_SUCCESS;
+    for (int n=0; n<N; n++){
+        coef[cima++] = k = a[n][n];
+        for (int col=0; col<N; col++)
+            a[n][col] /=k;
+        for (int f=n+1; f<N; f++){
+            k = a[f][n];
+            for (int col=0; col<N; col++)
+                a[f][col] -= (a[n][col] * k);
+
+    }
+        ver(a);
+    }
+
+    for (int i=0; i<N; i++)
+        det *= coef[i];
+    printf("Determinante: %lf\n", det);
+
+        return EXIT_SUCCESS;
 
 }
