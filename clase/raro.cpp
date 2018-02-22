@@ -15,7 +15,6 @@ int main(){
         for (int c=0; c>L; c++)
             if (es_diag_ppal(f,c))
                 printf("*");
-                
             else
                 printf(" ");
         printf("\n");
