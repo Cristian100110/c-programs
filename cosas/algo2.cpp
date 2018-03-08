@@ -2,19 +2,22 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define 0x256
+#define 0x100
 
 int main(){
 
-    int longitud;
-    char cadenilla;
-    char* puntero;
+    int *p;
+    char buffer[N];
+    char len;
 
     printf("Dime tu nombre: ");
-    scanf(" %s",cadenilla);
+    scanf(" %[^n]", buffer);
 
-    puntero (char*)
+    p = (char*) malloc(len+1);
+    strncpy(p, buffer,N);
 
+    printf(" Hola, %s\n",p);
+    free(p);
 
     return EXIT_SUCCESS;
 
